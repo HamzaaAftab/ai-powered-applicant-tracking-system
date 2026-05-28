@@ -1,0 +1,6 @@
+.env
+venv
+__pycache__
+__init__.py
+__init__.py
+frontend_implementation_guide.py

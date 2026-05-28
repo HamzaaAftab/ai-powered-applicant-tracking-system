@@ -1,0 +1,37 @@
+# Web Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Database ORM (Object Relational Mapper)
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10     # PostgreSQL driver - connects Python to Postgres
+
+# Supabase Storage Client
+supabase==2.10.0
+
+# Environment Variables
+python-dotenv==1.0.1         # Reads .env file
+
+# Data Validation (FastAPI uses this internally)
+pydantic[email]==2.10.3      # [email] extra installs email-validator for EmailStr
+pydantic-settings==2.6.1    # For settings/config management
+
+# File Processing
+python-multipart==0.0.20    # For file uploads in FastAPI
+pdfplumber==0.11.4          # For parsing PDFs
+
+# LLM & AI
+openai==1.59.3              # Standard client (used for NVIDIA NIM too)
+llama-parse==0.5.17         # State-of-the-art PDF/OCR parsing
+Pillow==11.0.0              # Image processing
+
+# ID Generation
+nanoid==2.0.0               # Generate unique slugs like "JOB-A3F9K2"
+
+# LLM
+openai==1.57.4              # OpenAI API client (also works with other providers)
+google-generativeai==0.8.3  # Google Gemini
+
+# Background Tasks
+celery==5.4.0               # Task queue for background LLM processing
+redis==5.2.1                # Message broker for Celery
